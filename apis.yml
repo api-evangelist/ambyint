@@ -1,23 +1,72 @@
 aid: ambyint
+
 name: Ambyint
-description: 'Ambyint is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.ambyint.com/hubfs/Ambyint%20Hero%20Image-v1-1.png
+
+description: 'Ambyint provides AI‑powered production optimization solutions for the oil and gas industry. Their platform uses machine learning to continuously improve well performance, offering tools such as rod‑lift, plunger‑lift, and gas‑lift optimization, as well as ESP management. The company aims to maximize output while reducing operational costs through autonomous set‑point management and predictive maintenance.'
+
 url: https://raw.githubusercontent.com/api-evangelist/ambyint/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
-- Company
-apis: []
+- Production Optimization
+- Artificial Lift
+- Oil & Gas
+- AI
+- Autonomous Setpoint Management
+- Anomaly Detection
+- Analytics
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/ambyint-hosts.yml
+- type: Vendors
+  url: vendors/ambyint-vendors.yml
+- type: TermsOfService
+  url: https://www.ambyint.com/terms-of-service/
+- type: PrivacyPolicy
+  url: https://www.ambyint.com/privacy/
+- type: Leadership
+  url: https://www.ambyint.com/leadership
+- type: Blog
+  url: https://www.ambyint.com/blog
+- type: DomainSecurity
+  url: security/ambyint-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.ambyint.com/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-09-24'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+x-enrichment:
+  date: '2026-09-24'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
